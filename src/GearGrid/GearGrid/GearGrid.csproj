@@ -4,7 +4,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <UserSecretsId>aspnet-GearGrid-3debad83-3baf-459c-8720-021f5306d101</UserSecretsId>
+        <UserSecretsId>aspnet-GearGrid-ae070965-3762-41b3-bd06-d0f0a3a46523</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,12 +12,16 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
         <ProjectReference Include="..\GearGrid.Client\GearGrid.Client.csproj"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.2"/>
         <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.2"/>
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.2"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.2"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Data\Migrations\" />
     </ItemGroup>
 
 </Project>
